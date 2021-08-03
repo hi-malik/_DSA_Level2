@@ -70,7 +70,7 @@ public class Magnets {
 		        return false;
 	}
 	public static boolean isItSafe(char ans[][], int top[], int left[], int right[], int bottom[], int row, int col, char sign){
-	    if((col - 1 >= 0 && ans[row][col - 1] == sign) || (row - 1 >= 0 && ans[row - 1][col] == sign) || (col + 1 < ans.length && ans[row][col + 1] == sign)){
+	    if((col - 1 >= 0 && ans[row][col - 1] == sign) || (row - 1 >= 0 && ans[row - 1][col] == sign) || (col + 1 < ans[0].length && ans[row][col + 1] == sign)){
 	        return false;
 	    }
 	    if(sign == '+'){
